@@ -1,0 +1,5 @@
+# Build output
+*.vmz
+
+# Local deploy scripts
+*.ps1

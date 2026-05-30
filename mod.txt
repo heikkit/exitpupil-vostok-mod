@@ -1,0 +1,12 @@
+[mod]
+name="ExitPupil"
+id="exitpupil"
+version="1.0.2"
+description="ExitPupil — physics-based optic brightness simulation"
+priority=10
+
+[autoload]
+ExitPupil="res://exitpupil.gd"
+
+[updates]
+modworkshop=56890
