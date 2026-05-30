@@ -2,7 +2,9 @@
 
 A [Road to Vostok](https://store.steampowered.com/app/1937470/Road_to_Vostok/) mod that simulates physics-based optic brightness using real-world exit pupil mechanics.
 
-Available on [ModWorkshop](https://mod.io/g/roadtovostok/m/exitpupil).
+Available on [ModWorkshop](https://modworkshop.net/mod/56890).
+
+Developed with [Claude](https://claude.ai).
 
 ---
 
@@ -45,7 +47,7 @@ Vanilla magnifications are derived from the game's hardcoded ADS FOV values (`ba
 
 ## Likho's VosTac compatibility
 
-If [Likho's VosTac](https://mod.io/g/roadtovostok/m/likhos-weapon-handling-fixes) is installed, ExitPupil loads his `ScopeCatalog.gd` at startup and reads `mag_range` directly from it — no hardcoded values, no coordination required. This means:
+If [Likho's VosTac](https://modworkshop.net/mod/56366) is installed, ExitPupil loads his `ScopeCatalog.gd` at startup and reads `mag_range` directly from it — no hardcoded values, no coordination required. This means:
 
 - Magnification values are always in sync with whatever Likho ships
 - Any number of discrete zoom steps is supported automatically; the zoom index is looked up with a clamped array index into `mag_range`, so adding more steps to a scope requires no changes to ExitPupil
@@ -70,7 +72,7 @@ Declaring `blur_radius` as a uniform also serves as the compatibility signal tha
 
 ## MCM support
 
-An intensity slider (0.0–2.0) is exposed via [Mod Configuration Menu](https://mod.io/g/roadtovostok/m/modconfigurationmenu) if installed. At 0.0 the effect is disabled entirely; at 1.0 it runs at full simulation strength; values above 1.0 exaggerate the effect beyond physical accuracy.
+An intensity slider (0.0–2.0) is exposed via [Mod Configuration Menu](https://modworkshop.net/mod/53713) if installed. At 0.0 the effect is disabled entirely; at 1.0 it runs at full simulation strength; values above 1.0 exaggerate the effect beyond physical accuracy.
 
 ---
 
